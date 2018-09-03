@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_sugestao"
+        android:icon="@drawable/ic_thumb_up_black_18dp"
+        android:title="O que posso fazer?" />
+
+    <item android:title="Receitas">
+        <menu>
+            <item
+                android:id="@+id/nav_consultarReceitas"
+                android:icon="@drawable/ic_list_black_18dp"
+                android:title="Consultar" />
+            <item
+                android:id="@+id/nav_inserirReceitas"
+                android:icon="@drawable/ic_add_box_black_24dp"
+                android:title="Inserir" />
+        </menu>
+    </item>
+
+
+
+    <item android:title="Produtos">
+        <menu>
+            <item
+            android:id="@+id/nav_consultarProdutos"
+            android:icon="@drawable/ic_list_black_18dp"
+            android:title="Produtos disponiveis" />
+
+            <item
+                android:id="@+id/nav_verProdutos"
+                android:icon="@drawable/ic_list_black_18dp"
+                android:title="Produtos indisponiveis" />
+            <item
+                android:id="@+id/nav_inserirProdutos"
+                android:icon="@drawable/ic_add_box_black_24dp"
+                android:title="Inserir" />
+        </menu>
+    </item>
+
+</menu>

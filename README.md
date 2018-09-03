@@ -1,5 +1,5 @@
 # StockHome
-Começado no inicio de 2016 e apresentado em meados de junho(v1.0) é o projeto da pap do Secundário.
+Começado no inicio de 2016 e apresentado em meados de junho(v0.0) é o projeto da pap do Secundário.
 
 É uma aplicação android que permite controlar os produtos que cada tem aem casa, guardar receitas, e tambem filtra as receitas de acordo com os produtos que temos.
 
