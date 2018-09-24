@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/nav_sugestao"
@@ -21,13 +21,12 @@
     </item>
 
 
-
     <item android:title="Produtos">
         <menu>
             <item
-            android:id="@+id/nav_consultarProdutos"
-            android:icon="@drawable/ic_list_black_18dp"
-            android:title="Produtos disponiveis" />
+                android:id="@+id/nav_consultarProdutos"
+                android:icon="@drawable/ic_list_black_18dp"
+                android:title="Produtos disponiveis" />
 
             <item
                 android:id="@+id/nav_verProdutos"
@@ -39,5 +38,4 @@
                 android:title="Inserir" />
         </menu>
     </item>
-
 </menu>

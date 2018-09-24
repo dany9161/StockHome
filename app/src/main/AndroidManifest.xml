@@ -14,7 +14,7 @@
         //MAIN ACTIVITY
         //-----------------------------------------------------------
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="orientation|screenSize">
             <intent-filter>
@@ -26,16 +26,16 @@
         //-----------------------------------------------------------
         //INSERE PRODUTOS
         //-----------------------------------------------------------
-        <activity android:name=".inserir_produtos">
+        <activity android:name=".Activities.AddProdutosActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".consultar_produtos" />
+                android:value=".Activities.ConsultarProdutosActivity" />
         </activity>
         //-----------------------------------------------------------
         //CONSULTA PRODUTOS
         //-----------------------------------------------------------
         <activity
-            android:name=".consultar_produtos"
+            android:name=".Activities.ConsultarProdutosActivity"
             android:launchMode="singleTop">
             //searchView
             <intent-filter>
@@ -47,20 +47,20 @@
                 android:resource="@xml/searchable" />
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Activities.MainActivity" />
         </activity>
         //-----------------------------------------------------------
         //INSERE RECEITAS
         //-----------------------------------------------------------
-        <activity android:name=".inserir_receitas">
+        <activity android:name=".Activities.AddReceitasActivity">
         </activity>
         //-----------------------------------------------------------
         //CONSULTA RECEITAS
         //-----------------------------------------------------------
-        <activity android:name=".consulta_receitas">
+        <activity android:name=".Activities.ConsultaReceitasActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Activities.MainActivity" />
             //searchView
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -76,46 +76,46 @@
         //-----------------------------------------------------------
         //EDITAR PRODUTOS
         //-----------------------------------------------------------
-        <activity android:name=".editar_produtos">
+        <activity android:name=".Activities.EditarProdutosActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".consultar_produtos" />
+                android:value=".Activities.ConsultarProdutosActivity" />
         </activity>
         //-----------------------------------------------------------
         //INSERIR INGREDIENTES
         //-----------------------------------------------------------
-        <activity android:name=".adiciona_ingredientes" />
+        <activity android:name=".Activities.AddIngActivity" />
         //-----------------------------------------------------------
         //EDITAR RECEITAS
         //-----------------------------------------------------------
-        <activity android:name=".editar_receitas"
+        <activity android:name=".Activities.EditarReceitasActivity"
             android:configChanges="orientation|screenSize">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".consulta_receitas" />
+                android:value=".Activities.ConsultaReceitasActivity" />
         </activity>
         //-----------------------------------------------------------
         //EDITAR INGREDIENTES
         //-----------------------------------------------------------
-        <activity android:name=".edita_ingredientes" />
+        <activity android:name=".Activities.EditaIngredientesActivity" />
         //-----------------------------------------------------------
         //EDITAR INGREDIENTES ADICIONA
         //-----------------------------------------------------------
-        <activity android:name=".edita_ingrdientes_adiciona" />
+        <activity android:name=".Activities.EditaIngredientesAdicionaActivity" />
         //-----------------------------------------------------------
         //FAZER RECEITAS
         //-----------------------------------------------------------
-        <activity android:name=".fazer_receita"
+        <activity android:name=".Activities.FazerReceitaActivity"
             android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".consulta_receitas" />
+                android:value=".Activities.ConsultaReceitasActivity" />
         </activity>
         //-----------------------------------------------------------
         //INGREDIENTES INDISPONIVEIS
         //-----------------------------------------------------------
-        <activity android:name=".ver_produtos">
+        <activity android:name=".Activities.VerProdutosActivity">
             //searchView
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -129,12 +129,12 @@
                 android:value=".consultar_produtos" />
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Activities.MainActivity" />
         </activity>
         //-----------------------------------------------------------
         //COMPRAR PRODUTOS
         //-----------------------------------------------------------
-        <activity android:name=".comprarProdutos"></activity>
+        <activity android:name=".Activities.ComprarProdutosActivity"></activity>
     </application>
 
 </manifest>
